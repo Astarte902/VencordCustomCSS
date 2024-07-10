@@ -1,0 +1,58 @@
+:root{
+    --csu-bumper-color: var(--interactive-active);
+    --csu-bumper-width: 6px;
+    --csu-anim-duration: .5s;
+    --csu-unread-width: 2px;
+    --csu-init-margin: var(--csu-bumper-width);
+    --csu-anim-transition:  cubic-bezier(1, 0, 1, 1);
+    --csu-bg-hover: var(--background-modifier-hover);
+    --csu-bg-selected: var(--background-modifier-selected);
+}
+
+.containerDefault_f6f816 .wrapper_d8bfb3:not(.typeThread_d8bfb3) /* channel padding*/{
+    padding: 0;
+    margin-left: 0;
+}
+/* Channel margin/background transition */
+.containerDefault_f6f816.selected_f6f816 > .wrapper_d8bfb3:not(.typeThread_d8bfb3) .link_d8bfb3 /* selected text channel */,
+.containerDefault_f6f816:hover .wrapper_d8bfb3:not(.typeThread_d8bfb3) > .link_d8bfb3/* any text channel */{
+    transition: none;
+    margin-left: max(var(--csu-bumper-width), var(--csu-unread-width));
+}
+.link_d8bfb3 /* text channel*/{
+    border-radius: 0px;
+    margin-left: var(--csu-init-margin);
+    transition: margin-left var(--csu-anim-duration) var(--csu-anim-transition), background-color var(--csu-anim-duration);
+}
+/* Unread */
+.unread_d8bfb3 /* unread dot before a text channel */{
+    height: 100%;
+    width: var(--csu-unread-width);
+    border-radius: 0px;
+    top: unset;
+    margin-top: unset;
+    left: 0;
+}
+/* Bumper */
+.containerDefault_f6f816:hover::before /* text channel */,
+.containerDefault_f6f816.selected_f6f816:before /* selected text channel */{
+    padding-right: var(--csu-bumper-width);
+    transition: none;
+}
+.containerDefault_f6f816:before /* text channel */{
+    content: "";
+    display:inline-block;
+    background: var(--csu-bumper-color);
+    height: 100%;
+    position: absolute;
+    left:0;
+    transition: padding-right var(--csu-anim-duration) var(--csu-anim-transition);
+}
+/* Background */
+.wrapper_d8bfb3:hover .link_d8bfb3 /* text channel */{
+    background-color: var(--csu-bg-hover);
+}
+.modeSelected_d8bfb3 .link_d8bfb3 /* text channel */,
+.modeSelected_d8bfb3:hover .link_d8bfb3 /* text channel */{
+    background-color: var(--csu-bg-selected);
+}
