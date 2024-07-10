@@ -1,5 +1,5 @@
 :root{
-    --csu-bumper-color: var(--interactive-active);
+    --csu-bumper-color: #EB232B;
     --csu-bumper-width: 6px;
     --csu-anim-duration: .5s;
     --csu-unread-width: 2px;
