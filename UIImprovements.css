@@ -1,0 +1,22 @@
+[class*=channelTextAreaDisabled] {
+    display: none!important;
+}
+
+/* or if it doesn't work like because of themes: */
+[class*=channelTextAreaDisabled] {
+    opacity: 0!important;
+    position: absolute!important;
+    height: 0px!important;
+    width: 0px!important;
+    z-index: 0!important;
+}
+
+/* Hide annoying sticker popup window that appears when you type */
+.da-channelTextArea > .container-JHR0NT {
+    display: none;
+}
+
+/* Remove DogeHouse Competition */
+#private-channels-1.clickable-1JJAn8 {
+    display: none;
+}
