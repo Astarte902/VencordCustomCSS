@@ -1,0 +1,9 @@
+/* Hide Nitro gift button */
+button[aria-label="Send a gift"] {
+    display: none;
+}
+
+/* Remove Big Nitro Button */
+#private-channels-2.clickable-1JJAn8 {
+    display: none;
+}
