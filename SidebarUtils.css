@@ -1,7 +1,7 @@
 :root{
     --csu-bumper-color: #EB232B;
     --csu-bumper-width: 6px;
-    --csu-anim-duration: .5s;
+    --csu-anim-duration: .2s;
     --csu-unread-width: 2px;
     --csu-init-margin: var(--csu-bumper-width);
     --csu-anim-transition:  cubic-bezier(1, 0, 1, 1);
