@@ -1,0 +1,32 @@
+:root{
+    --discord-icon: none; /* discord icon */
+    --home-icon: block; /* moon icon */
+    --home-icon-url: url("https://discord.com/assets/f34693ee7076c81cf379.svg");
+    }
+    
+    [class*=childWrapper] > svg:not([class*=favoriteIcon]){
+      display: var(--discord-icon);
+    }
+    [class*=childWrapper]:has(svg:not([class*=favoriteIcon]))::before {
+        content: '';
+        display: var(--home-icon);
+        position: absolute;
+        width: 70%;
+        height: 70%;
+        background: var(--text-normal);
+        mask-image: var(--home-icon-url) center/contain no-repeat !important;
+        mask: var(--home-icon-url) center/contain no-repeat !important;
+    }
+    
+    :root{
+      --customEmojiIconURL: url(https://discord.com/assets/f34693ee7076c81cf379.svg);
+      --customEmojiIconMask: url(https://discord.com/assets/f34693ee7076c81cf379.svg);
+    }
+    /* Custom Emoji Button */
+    [class*=emojiButton] [class*=spriteColored]{
+      background: var(--customEmojiIconURL) center/contain no-repeat;
+    }
+    
+    [class*=emojiButton] [class*=spriteGreyscale]{
+      mask: var(--customEmojiIconMask) center/contain no-repeat;
+    }
