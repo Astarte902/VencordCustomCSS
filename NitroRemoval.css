@@ -12,8 +12,3 @@ button[aria-label="Send a gift"] {
 .container_b15955:nth-of-type(2){ 
     display: none;
 }
-
-/* Remove shop option in messages*/
-.container_b15955:nth-of-type(3){ 
-    display: none;
-}
