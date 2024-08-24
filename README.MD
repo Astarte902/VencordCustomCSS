@@ -10,4 +10,4 @@ Import Links:
 
 @import url(https://raw.githubusercontent.com/Astarte902/VencordCustomCSS/main/UIImprovements.css);
 
-@import url(https://raw.githubusercontent.com/Astarte902/VencordCustomCSS/main/Theme.css)
+@import url(https://raw.githubusercontent.com/Astarte902/VencordCustomCSS/main/Theme.css);
